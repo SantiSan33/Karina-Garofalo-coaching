@@ -50,7 +50,7 @@ body {
   height: 200px; }
 
 .fondoNegro {
-  background-color: black;
+  background-color: white;
   bottom: 0;
   grid-area: footer;
   padding-bottom: 10px;
@@ -59,7 +59,7 @@ body {
   .fondoNegro .tituloRedes {
     color: #e9aead;
     text-align: center;
-    background-color: black;
+    background-color: white;
     padding: 25px; }
   .fondoNegro .listaRedes {
     color: #03045e;
