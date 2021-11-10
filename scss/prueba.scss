@@ -14,7 +14,7 @@
     font-family: "Work Sans", sans-serif;
     font-size: 1.953rem;
     line-height: normal;
-    background-image: linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );
+    background-image: /*linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );*/ linear-gradient(to right, #0f0c29, #302b63, #24243e);
     height: 100%;
     letter-spacing: 1px;
   }
@@ -74,7 +74,7 @@
   .titulosDebImg div {
     border-radius: 10px;
     text-align: center;
-    background-color: #1a1f47;
+    background-color: #5c677d;
     height: 200px;
   }
 
@@ -83,7 +83,7 @@
   
 
   .fondoNegro{
-    background-color: white;
+    background-color: #8e9aaf;
     bottom: 0;
     grid-area: footer;
     padding-bottom: 10px;
@@ -91,10 +91,11 @@
     height: auto;
     
     .tituloRedes {
-        color: #e9aead;
+        color: #ffb4a2;
         text-align: center;
-        background-color: white;
+        background-color: #8e9aaf;
         padding: 25px;
+        font-weight: 600;
       }
 
       .listaRedes {
@@ -154,7 +155,7 @@
     "logo navegador";
     width: auto;
     height: auto;
-    background-color: #1a1f47 ;
+    background-color: #8e9aaf ;
 
     .logo {
       width: 180px;
@@ -164,7 +165,7 @@
       top: 0;
       left: 0;
       grid-area: logo;
-      background-color: #1a1f47;
+      background-color: #8e9aaf;
       
     }
 
@@ -176,7 +177,7 @@
   
       .menuPrincipal {
           text-align: center;
-          background-color: #1a1f47;
+          background-color: #8e9aaf;
           background-repeat: repeat;
           padding: 10px;
           width: auto;
@@ -210,7 +211,7 @@
    .gridBody{
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 0.8fr 2fr repeat(2, 1.5fr) 0.5fr;
+    grid-template-rows: 0.8fr 1.7fr repeat(2, 1.5fr) 0.5fr;
     grid-template-areas: 
     "header header header"
     " perfilPro perfilPro perfilPro"
@@ -241,8 +242,9 @@
   .comoEmpece{
     grid-area: comoEmpece;
     margin: 20px 20px ;
-    background-color: #1a1f47 ;
+    background-color: #5c677d ;
     border-radius: 10px;
+    padding: 10px 10px;
     h2{
       color: #e9aead;
     }
@@ -251,9 +253,10 @@
   .objetivo{
     grid-area: objetivo;
     margin: 20px 20px;
-    background-color:#1a1f47;
+    background-color:#5c677d;
     background-repeat: repeat;
     border-radius: 10px;
+    padding: 10px 10px;
     h2{
       color: #e9aead;
     }
@@ -270,13 +273,19 @@
       justify-content: center;
       align-content: center;
       padding: 30px 20px;
-      background-color: #1a1f47 ;
+      border-radius: 10px;
+      border: solid 1px;
+      margin: 15px 300px;
+      background-color: #5c677d;
+      
+
+
       .taller1{
         color: #e9aead;
         display: flex;
         justify-content: center;
-        background-image: linear-gradient(#6C5B7B, #C06C84);
         width: 251.7px;
+        
         .parrafosTall{
           display: flex;
           justify-content: center;
@@ -292,7 +301,6 @@
         color: #e9aead;
         display: flex;
         justify-content: center;
-        background-image: linear-gradient(#6C5B7B, #C06C84);
         width: 251.7px;
         
       }
@@ -300,7 +308,6 @@
         color: #e9aead;
         display: flex;
         justify-content: center;
-        background-image: linear-gradient(#6C5B7B, #C06C84);
       }
     }
   }
@@ -338,18 +345,30 @@
       padding: 50px 0 ;
       .mb-3{
         padding: 3px;
+        .form-label{
+          color: #e9aead;
+        }
       }
       .row-mb-3{
         padding: 3px;
+        color: #e9aead;
       }
       .col-sm-10{
         padding: 3px;
+        color: #e9aead;
       }
       .edad{
         padding: 3px;
+        color: #e9aead;
       }
       .fechaTalleres{
         padding: 4px;
+        color: #e9aead;
+        font-weight: 600;
+        margin-top: 18px;
+        .form-check-label{
+          color: black;
+        }
       }
       .boton{
   
@@ -372,9 +391,18 @@
 
     .sesiones{
       grid-area: sesiones;
+      h2{
+        color: #e9aead;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
     }
     .dejanosContacto{
       grid-area: dejanosContacto;
+      h2{
+        color: #e9aead;
+        font-weight: 500;
+      }
     }
     
   }

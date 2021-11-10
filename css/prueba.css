@@ -11,7 +11,7 @@ body {
   font-family: "Work Sans", sans-serif;
   font-size: 1.953rem;
   line-height: normal;
-  background-image: linear-gradient(358.4deg, #f99777 -2.1%, #623aa2 90%);
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   height: 100%;
   letter-spacing: 1px; }
 
@@ -46,21 +46,22 @@ body {
 .titulosDebImg div {
   border-radius: 10px;
   text-align: center;
-  background-color: #1a1f47;
+  background-color: #5c677d;
   height: 200px; }
 
 .fondoNegro {
-  background-color: white;
+  background-color: #8e9aaf;
   bottom: 0;
   grid-area: footer;
   padding-bottom: 10px;
   width: auto;
   height: auto; }
   .fondoNegro .tituloRedes {
-    color: #e9aead;
+    color: #ffb4a2;
     text-align: center;
-    background-color: white;
-    padding: 25px; }
+    background-color: #8e9aaf;
+    padding: 25px;
+    font-weight: 600; }
   .fondoNegro .listaRedes {
     color: #03045e;
     text-align: center;
@@ -105,7 +106,7 @@ a {
   grid-template-areas: "logo navegador";
   width: auto;
   height: auto;
-  background-color: #1a1f47; }
+  background-color: #8e9aaf; }
   .header .logo {
     width: 180px;
     height: 180px;
@@ -114,7 +115,7 @@ a {
     top: 0;
     left: 0;
     grid-area: logo;
-    background-color: #1a1f47; }
+    background-color: #8e9aaf; }
   .header .navegador {
     display: flex;
     flex-flow: row wrap;
@@ -122,7 +123,7 @@ a {
     grid-area: navegador; }
     .header .navegador .menuPrincipal {
       text-align: center;
-      background-color: #1a1f47;
+      background-color: #8e9aaf;
       background-repeat: repeat;
       padding: 10px;
       width: auto;
@@ -144,7 +145,7 @@ a {
 .gridBody {
   display: grid;
   grid-template-columns: 3fr 3fr 3fr;
-  grid-template-rows: 0.8fr 2fr repeat(2, 1.5fr) 0.5fr;
+  grid-template-rows: 0.8fr 1.7fr repeat(2, 1.5fr) 0.5fr;
   grid-template-areas: "header header header" " perfilPro perfilPro perfilPro" "comoEmpece . ." "objetivo . ." "footer footer footer";
   width: auto;
   height: auto; }
@@ -166,17 +167,19 @@ a {
 .comoEmpece {
   grid-area: comoEmpece;
   margin: 20px 20px;
-  background-color: #1a1f47;
-  border-radius: 10px; }
+  background-color: #5c677d;
+  border-radius: 10px;
+  padding: 10px 10px; }
   .comoEmpece h2 {
     color: #e9aead; }
 
 .objetivo {
   grid-area: objetivo;
   margin: 20px 20px;
-  background-color: #1a1f47;
+  background-color: #5c677d;
   background-repeat: repeat;
-  border-radius: 10px; }
+  border-radius: 10px;
+  padding: 10px 10px; }
   .objetivo h2 {
     color: #e9aead; }
 
@@ -191,12 +194,14 @@ a {
     justify-content: center;
     align-content: center;
     padding: 30px 20px;
-    background-color: #1a1f47; }
+    border-radius: 10px;
+    border: solid 1px;
+    margin: 15px 300px;
+    background-color: #5c677d; }
     .talleres .talleresHijo .taller1 {
       color: #e9aead;
       display: flex;
       justify-content: center;
-      background-image: linear-gradient(#6C5B7B, #C06C84);
       width: 251.7px; }
       .talleres .talleresHijo .taller1 .parrafosTall {
         display: flex;
@@ -209,13 +214,11 @@ a {
       color: #e9aead;
       display: flex;
       justify-content: center;
-      background-image: linear-gradient(#6C5B7B, #C06C84);
       width: 251.7px; }
     .talleres .talleresHijo .taller3 {
       color: #e9aead;
       display: flex;
-      justify-content: center;
-      background-image: linear-gradient(#6C5B7B, #C06C84); }
+      justify-content: center; }
 
 .main {
   background-color: #1a1f47; }
@@ -248,14 +251,24 @@ a {
     padding: 50px 0; }
     .formContacto .formulario .mb-3 {
       padding: 3px; }
+      .formContacto .formulario .mb-3 .form-label {
+        color: #e9aead; }
     .formContacto .formulario .row-mb-3 {
-      padding: 3px; }
+      padding: 3px;
+      color: #e9aead; }
     .formContacto .formulario .col-sm-10 {
-      padding: 3px; }
+      padding: 3px;
+      color: #e9aead; }
     .formContacto .formulario .edad {
-      padding: 3px; }
+      padding: 3px;
+      color: #e9aead; }
     .formContacto .formulario .fechaTalleres {
-      padding: 4px; }
+      padding: 4px;
+      color: #e9aead;
+      font-weight: 600;
+      margin-top: 18px; }
+      .formContacto .formulario .fechaTalleres .form-check-label {
+        color: black; }
     .formContacto .formulario .boton {
       padding: 5px;
       display: flex;
@@ -269,8 +282,15 @@ a {
   grid-template-areas: "sesiones" "dejanosContacto"; }
   .flexFormulario .sesiones {
     grid-area: sesiones; }
+    .flexFormulario .sesiones h2 {
+      color: #e9aead;
+      font-weight: 500;
+      margin-bottom: 15px; }
   .flexFormulario .dejanosContacto {
     grid-area: dejanosContacto; }
+    .flexFormulario .dejanosContacto h2 {
+      color: #e9aead;
+      font-weight: 500; }
 
 @media screen and (max-width: 768px) {
   .perfilPro h1 {
