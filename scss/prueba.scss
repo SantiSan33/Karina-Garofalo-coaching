@@ -30,8 +30,8 @@
   
     padding: 20px 0 ;
     width: 416px;
-    grid-area: texto1;
-    margin: 30px 0 ;
+    height: auto;
+    margin: 30px 30px ;
     transition: 2s;
     &:hover{
       width: 450px;
@@ -53,7 +53,8 @@
   .texto2 {
     padding: 20px 0;
     width: 416px;
-    margin: 30px 0 ;
+    height: auto;
+    margin: 30px 30px ;
     transition: 2s;
     &:hover{
       width: 450px;
@@ -83,7 +84,7 @@
   
 
   .fondoNegro{
-    background-color: #8e9aaf;
+    background-color: #5c677d;
     bottom: 0;
     grid-area: footer;
     padding-bottom: 10px;
@@ -93,7 +94,7 @@
     .tituloRedes {
         color: #ffb4a2;
         text-align: center;
-        background-color: #8e9aaf;
+        background-color: #5c677d;
         padding: 25px;
         font-weight: 600;
       }
@@ -155,7 +156,7 @@
     "logo navegador";
     width: auto;
     height: auto;
-    background-color: #8e9aaf ;
+    background-color: #5c677d ;
 
     .logo {
       width: 180px;
@@ -165,7 +166,7 @@
       top: 0;
       left: 0;
       grid-area: logo;
-      background-color: #8e9aaf;
+      background-color: #5c677d;
       
     }
 
@@ -177,7 +178,7 @@
   
       .menuPrincipal {
           text-align: center;
-          background-color: #8e9aaf;
+          background-color: #5c677d;
           background-repeat: repeat;
           padding: 10px;
           width: auto;
@@ -284,15 +285,17 @@
         color: #e9aead;
         display: flex;
         justify-content: center;
-        width: 251.7px;
+        width: auto;
         
         .parrafosTall{
           display: flex;
           justify-content: center;
           padding: 10px 0 ;
-          margin: 5px 0 ;
+          margin: 8px 0 ;
           width: 251.7px;
           height: 23;
+          letter-spacing: 1.2px;
+          font-weight: 600;
           
         }
         
@@ -301,7 +304,7 @@
         color: #e9aead;
         display: flex;
         justify-content: center;
-        width: 251.7px;
+        width: auto;
         
       }
       .taller3{
@@ -379,7 +382,7 @@
       }
     }
    
-  }
+  
 
   .flexFormulario{
     display: grid;
@@ -406,8 +409,45 @@
     }
     
   }
+   }
 
-  @media screen and (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 768px) {
+
+    /* INDEX */
+    
+    .texto1 {
+  
+      padding: 20px 0  ;
+      width: 400px;
+      height: auto;
+      margin: 114px 20px ;
+      
+       }
+      
+
+    .texto2 {
+      padding: 20px 0;
+      width: 400px;
+      height: auto;
+      margin: 114px 20px ;
+       }
+
+
+
+       /* PERFIL PROFES */
+
     .perfilPro h1{
       font-size: 30px;
       font-weight: 700;
@@ -416,7 +456,7 @@
     .gridBody{
       display: grid;
     grid-template-columns: 3fr 3fr;
-    grid-template-rows: 0.8fr 1.8fr 1fr 0.5fr;
+    grid-template-rows: 0.8fr 1fr 1fr 0.5fr;
     grid-template-areas: 
     "header header"
     "perfilPro perfilPro"
@@ -433,14 +473,120 @@
       margin-left: 10px;
     }
   
-  }
+  
 
-  @media all and (max-width: 576px) {
+
+    .talleres{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-items: center;
+
+   
+     
+    .talleresHijo{
+
+
+      padding: 30px 20px;
+      border-radius: 10px;
+      border: solid 1px;
+      margin: 15px 110px;
+      background-color: #5c677d;
+      height: auto;
+      }
+
+       }
+
+       .formContacto{
+        background-color: #1a1f47;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .formulario{
+          background-image: linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );
+          border: solid 1px;
+          border-radius: 5px;
+          margin: 0px 100px;
+          padding: 50px 0 ;
+          width: 550px;
+          .sesiones{
+            margin-left: 15px;
+
+
+
+          .form-control{
+            width: 220px;
+          }
+
+        }
+           }
+            }
+  
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+  
+  
+  /* INDEX */
+
+    .titulosDebImg{
+
+      height: 450px;
+
+
+    .texto1 {
+  
+      padding: 20px 0  ;
+      width: auto;
+      height: auto;
+      margin: 30px 20px ;
+      
+       }
+      
+
+    .texto2 {
+      padding: 20px 0;
+      width: auto;
+      height: auto;
+      margin: 30px 20px ;
+      
+    .tituloTexto2 {
+      color: #e9aead;
+      font-weight: 500;
+
+      p {
+          color: black;
+          height: auto;
+        }
+    }
+       }
+        }
+
+        /* PERFIL PROFES */
   
     .gridBody{
       display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-template-rows: 0.8fr 1.4fr 1.3fr 0.5fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.8fr 1fr 0.9fr 0.5fr;
     grid-template-areas: 
     "header header"
     "perfilPro perfilPro"
@@ -454,14 +600,64 @@
     }
   
     .comoEmpece{
-      width: 170px;
-      height: 260px;
+      width: auto;
+      height: auto;
       margin-left: 19px;
+      
+      h2{
+        font-size: 19px;
+        font-weight: 700;
+      }
     }
    
     .objetivo{
-      width: 170px;
-      height: 260px;
+      width: auto;
+      height: auto;
+      h2{
+        font-size: 19px;
+        font-weight: 700;
+      }
     }
-  }
 
+    .talleres{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-items: center;
+      
+      
+      
+      .talleresHijo{
+      
+      padding: 30px 20px;
+      border-radius: 10px;
+      border: solid 1px;
+      margin: 15px 50px;
+      background-color: #5c677d;
+      width: 225px;
+      height: auto;
+     }
+
+    }
+
+
+    .formContacto{
+      background-color: #1a1f47;
+      padding: 50px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .formulario{
+        background-image: linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );
+        border: solid 1px;
+        border-radius: 5px;
+        margin: 0px 40px;
+        padding: 50px 0 ;
+        width: 550px;
+         }
+          }
+
+
+
+  }
